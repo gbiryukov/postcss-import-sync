@@ -1,4 +1,4 @@
-# postcss-import [![Travis Build Status](https://travis-ci.org/postcss/postcss-import.svg)](https://travis-ci.org/postcss/postcss-import) [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/u8l6u3lr6s5u5tpi?svg=true)](https://ci.appveyor.com/project/MoOx/postcss-import)
+# postcss-import-sync
 
 > [PostCSS](https://github.com/postcss/postcss) plugin to transform `@import` rules by inlining content.
 
@@ -22,7 +22,7 @@ If this behavior is not what you want, look at `skipDuplicates` option
 ## Installation
 
 ```console
-$ npm install postcss-import
+$ npm install postcss-import-sync
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ If your stylesheets are not in the same place where you run postcss (`process.cw
 // dependencies
 var fs = require("fs")
 var postcss = require("postcss")
-var atImport = require("postcss-import")
+var atImport = require("postcss-import-sync")
 
 // css to be processed
 var css = fs.readFileSync("css/input.css", "utf8")
@@ -187,7 +187,7 @@ It's equivalent to `onImport` with the following code:
 
 ```js
 var postcss = require("postcss")
-var atImport = require("postcss-import")
+var atImport = require("postcss-import-sync")
 
 var css = postcss()
   .use(atImport({

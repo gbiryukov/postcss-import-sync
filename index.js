@@ -567,7 +567,7 @@ function detach(node) {
 }
 
 module.exports = postcss.plugin(
-  "postcss-import",
+  "postcss-import-sync",
   AtImport
 )
 module.exports.warnNodesMessage = warnNodesMessage
